@@ -1,12 +1,12 @@
  # Secure Utils
-![Build](https://github.com/trevorism/secure-utils/actions/workflows/build.yml/badge.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/trevorism/secure-utils)
-![GitHub language count](https://img.shields.io/github/languages/count/trevorism/secure-utils)
-![GitHub top language](https://img.shields.io/github/languages/top/trevorism/secure-utils)
+![Build](https://github.com/trevorism/jersey-security-utils/actions/workflows/build.yml/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/trevorism/jersey-security-utils)
+![GitHub language count](https://img.shields.io/github/languages/count/trevorism/jersey-security-utils)
+![GitHub top language](https://img.shields.io/github/languages/top/trevorism/jersey-security-utils)
 
 Secure Utils is the security jar for https://trevorism.com
 
-Latest [Version](https://github.com/trevorism/secure-utils/releases/latest)
+Latest [Version](https://github.com/trevorism/jersey-security-utils/releases/latest)
 
 ## Motivation
 
