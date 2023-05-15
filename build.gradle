@@ -33,8 +33,8 @@ repositories {
 }
 
 dependencies {
-    api 'com.trevorism:secure-utils:5.0.0'
-    implementation 'org.glassfish.jersey.containers:jersey-container-servlet:2.37'
+    api 'com.trevorism:secure-utils:5.1.0'
+    implementation 'org.glassfish.jersey.containers:jersey-container-servlet:2.39.1'
     testImplementation 'junit:junit:4.13.2'
 }
 

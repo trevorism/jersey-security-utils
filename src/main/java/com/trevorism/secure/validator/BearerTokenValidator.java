@@ -82,7 +82,10 @@ public class BearerTokenValidator implements AuthorizationValidator {
         if (role.isEmpty()) {
             return;
         }
-        if (claimRole.equals(Roles.INTERNAL) && !secure.allowInternal()) {
+        if (claimRole.equals(Roles.INTERNAL)) {
+            if(secure.allowInternal()){
+                return;
+            }
             throw new AuthorizationNotValid("Insufficient access");
         }
         if (role.equals(Roles.ADMIN)) {
@@ -91,7 +94,12 @@ public class BearerTokenValidator implements AuthorizationValidator {
             }
         }
         if (role.equals(Roles.SYSTEM)) {
-            if (claimRole.equals(Roles.USER)) {
+            if (!claimRole.equals(Roles.ADMIN) && !claimRole.equals(Roles.SYSTEM)) {
+                throw new AuthorizationNotValid("Insufficient access");
+            }
+        }
+        if (role.equals(Roles.TENANT_ADMIN)) {
+            if (!claimRole.equals(Roles.ADMIN) && !claimRole.equals(Roles.SYSTEM) && !claimRole.equals(Roles.TENANT_ADMIN)) {
                 throw new AuthorizationNotValid("Insufficient access");
             }
         }

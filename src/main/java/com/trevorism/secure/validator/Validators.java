@@ -8,7 +8,6 @@ public class Validators {
     public static final AuthorizationValidator bearerTokenValidator = new BearerTokenValidator();
     public static final AuthorizationValidator cookieValidator = new CookieValidator();
     public static final AuthorizationValidator localhostTokenValidator = new LocalhostTokenValidator();
-
     public static List<AuthorizationValidator> allValidators = new ArrayList<>();
 
     static {
